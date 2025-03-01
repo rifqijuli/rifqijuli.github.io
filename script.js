@@ -1,4 +1,4 @@
-function upddateText() {
+function updateText() {
     console.log(document.getElementById("conditionToday").innerText)
 }
 
