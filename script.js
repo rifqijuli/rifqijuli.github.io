@@ -7,7 +7,7 @@ document.getElementById("myButton").onclick = function () {
 };
 
 document.getElementById("canvasButton").onclick = function () {
-    location.href = "./canvas.html";
+    location.href = "./canvas";
 };
 
 let trailCounter = []
