@@ -1,0 +1,15 @@
+body {
+    background-color: #d4edda; /* Pastel green */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #2c6e49; /* Dark green */
+    text-align: center;
+}
+
+p {
+    color: #4b6043; /* Slightly darker green */
+    font-size: 18px;
+    text-align: center;
+}
