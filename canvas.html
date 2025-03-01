@@ -15,9 +15,13 @@
         event.preventDefault();
         console.log(event.button)
         check++
-    });
-    addEventListener("mousemove", (event) => {
-        console.log (event.pageX + " & " + event.pageY)
+        console.log(check)
+        addEventListener("mousemove", (event) => {
+            console.log (event.pageX + " & " + event.pageY)
+        });
+        if (event.buttons == 0) {
+            removeEventListener('mousemove', (event));
+        })
     });
 </script>
 </body>
