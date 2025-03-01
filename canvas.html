@@ -10,19 +10,17 @@
 <div style="background: orange; width: 60px; height: 20px">
 </div>
 <script>
-    let check = 0;
-    addEventListener('click', (event) => {
-        event.preventDefault();
-        console.log(event.button)
-        check++
-        console.log(check)
-        addEventListener("mousemove", (event) => {
-            console.log (event.pageX + " & " + event.pageY)
-        });
-        if (event.buttons == 0) {
-            removeEventListener('mousemove', (event));
-        })
+    addEventListener("mousemove", (event) => {
+        console.log (event.pageX + " & " + event.pageY)
     });
+
+    const onMouseDown = (event) => {
+        console.log(event.button)
+    }
+
+    const onMouseUp = (event) => {
+        console.log(event.button)
+    }
 </script>
 </body>
 </html>
