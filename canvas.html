@@ -10,17 +10,18 @@
 <div style="background: orange; width: 60px; height: 20px">
 </div>
 <script>
+    function trackMouse(event) {
+        console.log (event.pageX + " & " + event.pageY)
+    }
+    
     window.addEventListener("mousedown", (event) => {
         console.log(event.button)
-        window.addEventListener("mousemove", (event) => {
-            console.log (event.pageX + " & " + event.pageY)
-        });
+        window.addEventListener("mousemove", trackMouse);
     });
-
     window.addEventListener("mouseup", (event) => {
         console.log(event.button)
-        window.removeEventListener("mousemove", (event));
-    })
+        window.removeEventListener("mousemove", trackMouse);
+    });
 
 </script>
 </body>
