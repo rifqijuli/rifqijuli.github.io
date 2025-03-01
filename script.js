@@ -29,14 +29,12 @@ window.addEventListener("click", event => {
 
 // mousemove
 let lastX; // Tracks the last observed mouse X position
-let bar = document.body
-bar.addEventListener("mousedown", event => {
+document.body.addEventListener("mousedown", event => {
+    console.log("Mouse clicked:", event);
     if (event.button == 0) {
         lastX = event.clientX;
-        //console.log(lastX);
         window.addEventListener("mousemove", moved);
         event.preventDefault(); // Prevent selection
-        console.log("notice mouse clicked")
     }
 });
 
