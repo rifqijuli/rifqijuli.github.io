@@ -10,17 +10,18 @@
 <div style="background: orange; width: 60px; height: 20px">
 </div>
 <script>
-    addEventListener("mousemove", (event) => {
-        console.log (event.pageX + " & " + event.pageY)
+    window.addEventListener("mousedown", (event) => {
+        console.log(event.button)
+        window.addEventListener("mousemove", (event) => {
+            console.log (event.pageX + " & " + event.pageY)
+        });
     });
 
-    const onMouseDown = (event) => {
+    window.addEventListener("mouseup", (event) => {
         console.log(event.button)
-    }
+        window.removeEventListener("mousemove", (event));
+    })
 
-    const onMouseUp = (event) => {
-        console.log(event.button)
-    }
 </script>
 </body>
 </html>
