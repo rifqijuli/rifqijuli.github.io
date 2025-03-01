@@ -7,9 +7,12 @@
 <body>
 <h1>Let's Draw!🎙</h1>
 <button type="button" id="myButton">Go back Home!</button>
-<div style="background: orange; width: 60px; height: 20px">
 </div>
 <script>
+    document.getElementById("myButton").onclick = function () {
+        location.href = "./index";
+    };
+
     function trackMouse(event) {
         console.log (event.pageX + " & " + event.pageY)
         let trail = document.createElement("trail");
