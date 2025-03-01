@@ -10,6 +10,12 @@
 <div style="background: orange; width: 60px; height: 20px">
 </div>
 <script>
+    let check = 0;
+    addEventListener('click', (event) => {
+        event.preventDefault();
+        console.log(event.button)
+        check++
+    }
     addEventListener("mousemove", (event) => {
         console.log (event.pageX + " & " + event.pageY)
     });
